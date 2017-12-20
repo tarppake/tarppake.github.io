@@ -1,48 +1,77 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Osaaminen</title>
-    <!-- Required meta tags -->
+    <title>Yhteystiedot</title>
+<!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/frontpage.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
+<!-- Font awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-    <!--font awesome -->
+<!--font awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
 
   </head>
-  <body>
+  <body class="bg-dark">
 <!-- navbar -->
-  <div class="topnav" id="myTopnav">
-    <a href="frontpage.html"><i class="fas fa-home"></i> Etusivu </a>
-    <a href="osaaminen.html">osaaminen</a>
+  <div class="topnav sticky-top" id="myTopnav">
+    <a href="">Tarun Sivut</a>
+    <a href="frontpage.html"> Etusivu </a>
+    <a href="osaaminen.html">Osaaminen</a>
     <a href="harrastukset.html">Harrastukset</a>
-    <a href="#" class="active">Contacts</a>
+    <a href="#" class="active">Yhteystiedot</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
 
 
+<div class="container">
+    <div class="row justify-content-around">
 
-<div class="footer bg-dark">
-  <a href="doc.html" class="text-white">Documentointiin tästä</a>
+      <div class="card bg-light col-sm-6 mb-4">
+        <div class="card-header"><h3>Yhteystiedot</h3></div>
+        <div class="card-body">
+          <h4 class="card-title"><i class="fas fa-at"></i> Email</h4>
+          <p class="card-text">tarukemp@gmail.com</p>
+          <h4 class="card-title"><i class="fas fa-phone"></i> puhnro</h4>
+          <p class="card-text">Lorem ipsum</p>
+        </div>
+      </div>
+
+      <div class="card bg-light col-sm-5 mb-4">
+        <div class="card-header"><h3>Some</h3></div>
+        <div class="card-body">
+          <a href="https://twitter.com/This_Hades"><i class="fab fa-twitter"></i>Twitter</a>
+          <br><a href="https://www.instagram.com/this_hades/"><i class="fab fa-instagram"></i> Personal</a>
+          <br><a href="https://www.instagram.com/oorucosplay/"><i class="fab fa-instagram"></i> Cosplay</a>
+        </div>
+      </div>
+
+  </div>
 </div>
 
-  <!-- Optional JavaScript -->
+<!-- footer -->
+<div class="footer bg-dark fixed-bottom">
+  <a href="documentointi.html" class="text-white">Documentointiin tästä</a>
+</div>
+
+<!-- JavaScript -->
   <script>
-function myFunction() {
+  function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
         x.className = "topnav";
     }
-}
-</script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  }
+  </script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

@@ -1,49 +1,85 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Osaaminen</title>
-    <!-- Required meta tags -->
+    <title>Harrastukset</title>
+<!--  meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/frontpage.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
+<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-    <!--font awesome -->
+<!--font awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
 
   </head>
-  <body>
+  <body class="bg-dark">
+
 <!-- navbar -->
-  <div class="topnav" id="myTopnav">
-    <a href="frontpage.html"><i class="fas fa-home"></i> Etusivu </a>
-    <a href="osaaminen.html">osaaminen</a>
+  <div class="topnav sticky-top" id="myTopnav">
+    <a href="">Tarun Sivut</a>
+    <a href="frontpage.html">Etusivu </a>
+    <a href="osaaminen.html">Osaaminen</a>
     <a href="#" class="active">Harrastukset</a>
-    <a href="contacts.html">Contacts</a>
+    <a href="contacts.html">Yhteystiedot</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
 
+  <div class="container" >
 
+    <div class="card bg-light mb-4" >
+      <div class="card-body">
+        <h1>Cosplay</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum vitae ex vitae malesuada. Etiam in tempus massa. Ut lacus augue, interdum eget vehicula sit amet, placerat sed dolor. Vivamus vel aliquam sapien. </p>
 
+        <div class="row justify-content-center" >
+          <div class="column">
+            <img src="media/snufkin.jpg" style="width:200px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="media/snufkin2.jpg" style="width:200px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="media/snufkin3.jpg" style="width:200px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="media/snufkin4.jpg" style="width:200px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="footer bg-dark">
-  <a href="doc.html" class="text-white">Documentointiin tästä</a>
-</div>
+    <div class="card bg-light mb-4">
+      <div class="card-body">
+        <h1>Muut harrastukset</h1>
+        <h3>Käsityöt</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum vitae ex vitae malesuada. Etiam in tempus massa. Ut lacus augue, interdum eget vehicula sit amet, placerat sed dolor. Vivamus vel aliquam sapien. </p>
+        <h3>Propmaking</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum vitae ex vitae malesuada. Etiam in tempus massa. Ut lacus augue, interdum eget vehicula sit amet, placerat sed dolor. Vivamus vel aliquam sapien. </p>
+      </div>
+    </div>
+  </div>
 
-  <!-- Optional JavaScript -->
+<!-- footer -->
+  <div class="footer bg-dark ">
+    <a href="documentointi.html" class="text-white">Documentointiin tästä</a>
+  </div>
+
+<!-- Optional JavaScript -->
   <script>
-function myFunction() {
+  function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
         x.className = "topnav";
     }
-}
+  }
 </script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
